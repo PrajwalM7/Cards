@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern Bootstrap Cards</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #212529;
+            color: #fff;
+        }
+        .card {
+            background-color: #c483cf;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            
+        }
+        .card:hover {
+            transform: scale(1.03);
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .badge {
+            font-size: 0.85rem;
+            padding: 5px 10px;
+        }
+        .card-footer {
+            background: transparent;
+            border-top: none;
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Latest Blog Posts</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <img src="https://wallup.net/wp-content/uploads/2016/01/263693-nature-landscape-wildflowers-trees-calm-river-water-overcast-clouds.jpg" class="card-img-top" alt="Post One">
+                    <div class="card-body">
+                        <span class="badge bg-primary">Nature</span>
+                        <h5 class="mt-2">Exploring the Forest</h5>
+                        <p class="text-muted">Discover the hidden gems deep inside the forest.</p>
+                    </div>
+                    <div class="card-footer">2 days ago</div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <img src="https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?cs=srgb&dl=clouds-cold-dawn-2104152.jpg&fm=jpg" class="card-img-top" alt="Post Two">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark">Travel</span>
+                        <h5 class="mt-2">City Lights & Adventures</h5>
+                        <p class="text-muted">Experience the vibrant city nightlife like never before.</p>
+                    </div>
+                    <div class="card-footer">5 days ago</div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.JwstHEo_uWo6b-uZvf5ePAHaEo&pid=Api&P=0&h=180" class="card-img-top" alt="Post Three">
+                    <div class="card-body">
+                        <span class="badge bg-success">Hiking</span>
+                        <h5 class="mt-2">Conquering the Peaks</h5>
+                        <p class="text-muted">An exhilarating hike to the highest mountains.</p>
+                    </div>
+                    <div class="card-footer">2 weeks ago</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
